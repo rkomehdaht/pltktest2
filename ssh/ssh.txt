@@ -1,0 +1,9 @@
+#If you need access to database, use.
+
+mycomputer# ssh -L 9999:localhost:9999 my-gw-01.srv.dc2
+my-gw-01.srv.dc2# ssh -L 9999:localhost:3306 my-private-db.srv.dc2
+
+#If you need ssh access, use
+
+mycomputer# ssh -L 2222:my-private-db.srv.dc2:22 host2 my-gw-01.srv.dc2
+mycomputer# ssh -p 2222 localhost
