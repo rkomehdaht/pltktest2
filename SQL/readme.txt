@@ -1,1 +1,3 @@
-After mysql.sh authorize, then reasons.sql
+-Run mysql.sh,
+-authorize with password 12345
+-then run reasons.sql
